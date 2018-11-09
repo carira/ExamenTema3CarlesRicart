@@ -9,27 +9,23 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class RegistroAlumnos extends AppCompatActivity {
+public class RegisroAsignaturas extends AppCompatActivity {
 
     private Button volver;
     private Button registrar;
-    private EditText a_nombre;
-    private EditText a_edad;
-    private EditText a_ciclo;
-    private EditText a_curso;
+    private EditText as_nombreAsg;
+    private EditText as_numeroasignaturas;
     private MyDBAdapter dbAdapter;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_registro_alumnos);
+       setContentView(R.layout.asignaturas);
         volver=(Button)findViewById(R.id.a_volver);
         registrar=(Button) findViewById(R.id.a_registrar);
-        a_nombre=(EditText) findViewById(R.id.a_nombre);
-        a_edad=(EditText) findViewById(R.id.a_edad);
-        a_ciclo=(EditText) findViewById(R.id.a_ciclo);
-        a_curso=(EditText) findViewById(R.id.a_curso);
+        as_nombreAsg=(EditText) findViewById(R.id.as_nombreAsg);
+        as_numeroasignaturas=(EditText) findViewById(R.id.as_numeroasignaturas);
         volver.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -45,7 +41,7 @@ public class RegistroAlumnos extends AppCompatActivity {
             public void onClick(View v) {
                 dbAdapter.open();
 
-                dbAdapter.insertarAlumno(a_nombre.getText().toString() , a_edad.getText().toString(), a_ciclo.getText().toString(), a_curso.getText().toString());
+                dbAdapter.insertarAsignaturas(as_nombreAsg.getText().toString() ,as_numeroasignaturas.getText().toString());
 
 
             }

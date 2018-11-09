@@ -10,6 +10,7 @@ public class AD3B extends AppCompatActivity {
 
     private Button b_alumno;
     private Button b_profesor;
+    private Button b_asignatura;
     private Button b_volver;
 
     @Override
@@ -20,6 +21,7 @@ public class AD3B extends AppCompatActivity {
 
         b_alumno=(Button) findViewById(R.id.button_alumno);
         b_profesor=(Button)findViewById(R.id.button_profesor);
+        b_asignatura=(Button)findViewById(R.id.button_asignatura);
         b_volver=(Button) findViewById(R.id.ad3b_volver);
 
         b_alumno.setOnClickListener(new View.OnClickListener() {
@@ -33,6 +35,13 @@ public class AD3B extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i=new Intent(getApplicationContext(),RegistroProfesores.class);
+                startActivity(i);
+            }
+        });
+        b_asignatura.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i=new Intent(getApplicationContext(),RegisroAsignaturas.class);
                 startActivity(i);
             }
         });

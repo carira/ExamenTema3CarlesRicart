@@ -38,7 +38,12 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:text="@string/estudiantes_por_curso" />
-
+    <Button
+        android:id="@+id/ad3c_asignaturas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/Asignaturas" />
     <Button
         android:id="@+id/ad3c_todos_los_profesores"
         android:layout_width="match_parent"

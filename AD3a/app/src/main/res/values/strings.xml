@@ -16,6 +16,10 @@
     <string name="volver">Volver</string>
     <string name="registrar">Registrar</string>
     <string name="registro_de_profesores">Registro de profesores</string>
+    <string name="registro_de_asignaturas">Registro de asignaturas</string>
+    <string name="numeroasg">Numero Asignaturas</string>
+    <string name="Asignaturas">Asignaturas</string>
+    <string name="Asignatura">Asignatura</string>
     <string name="despacho">Despacho</string>
     <string name="_3c">3C</string>
     <string name="mostrar">Mostrar</string>
